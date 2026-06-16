@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeCase Store | Presupuesto</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1> AnimeCase Store</h1>
+
+            <ul>
+                <li> <a href="/Index.html">Inicio</a></li>
+                <li><a href="/views/productos.html">Productos</a></li>
+                <li><a class="activo" href="/views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="/views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="presupuesto">
+        <h2>Solicita tu presupuesto</h2>
+
+        <p>
+            Cuéntanos qué tipo de funda buscas y te enviaremos más información.
+        </p>
+
+        <form action="#" method="post"> <!--action="#" indica dónde se enviarían los datos. Como es una maqueta y no tenemos servidor, lo dejamos así. method="post" indica que los datos se enviarían de forma no visible en la URL.-->
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="info"> Cuéntanos más</label>
+            <input type="text" id="info" name="info" required>
+
+            <div class="checkbox">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">Acepto la política de privacidad</label>
+            </div>
+            <button type="submit">Enviar solicitud</button>
+
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <p>Síguenos en redes sociales:</p>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+        <a href="https://www.x.com" target="_blank">X</a>
+
+        <p>Calle Sakura 15, Sevilla</p>
+        <p>Aviso legal | Política de privacidad</p>
+    </footer>
+</body>
+</html>
